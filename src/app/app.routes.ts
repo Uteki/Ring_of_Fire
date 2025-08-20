@@ -1,3 +1,7 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+import { StartScreenComponent } from "./start-screen/start-screen.component";
+
+export const routes: Routes = [
+  { path: '', component: StartScreenComponent },
+];
