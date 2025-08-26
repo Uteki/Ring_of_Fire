@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {NgClass, NgForOf, NgIf, NgStyle} from "@angular/common";
 
 import { Game } from '../../models/game';
+import { PlayerComponent } from "../player/player.component";
 
 @Component({
   selector: 'app-game',
@@ -10,7 +11,8 @@ import { Game } from '../../models/game';
     NgForOf,
     NgStyle,
     NgClass,
-    NgIf
+    NgIf,
+    PlayerComponent
   ],
   templateUrl: './game.component.html',
   styleUrl: './game.component.scss'
