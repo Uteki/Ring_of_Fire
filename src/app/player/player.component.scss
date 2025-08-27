@@ -1,6 +1,17 @@
 .player {
+  width: 300px;
   display: flex;
   align-items: center;
+  background-color: orange;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+
+  border-top-right-radius: 0;
+
+  span {
+    font-size: 32px;
+    margin-left: 16px;
+  }
 
   img {
     width: 100px;

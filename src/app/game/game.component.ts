@@ -3,6 +3,8 @@ import {NgClass, NgForOf, NgIf, NgStyle} from "@angular/common";
 
 import { Game } from '../../models/game';
 import { PlayerComponent } from "../player/player.component";
+import {MatIcon} from "@angular/material/icon";
+import {MatFabButton} from "@angular/material/button";
 
 @Component({
   selector: 'app-game',
@@ -12,7 +14,9 @@ import { PlayerComponent } from "../player/player.component";
     NgStyle,
     NgClass,
     NgIf,
-    PlayerComponent
+    PlayerComponent,
+    MatIcon,
+    MatFabButton
   ],
   templateUrl: './game.component.html',
   styleUrl: './game.component.scss'
