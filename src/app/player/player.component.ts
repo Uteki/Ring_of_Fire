@@ -9,13 +9,15 @@ import {Component, Input} from '@angular/core';
 })
 export class PlayerComponent {
   @Input()name: any;
-  test: number = 0;
+  @Input()playerActive: boolean = false;
+
+  picNum: number = 0;
 
   constructor() {
-    this.test = this.testos()
+    this.picNum = this.randomPic()
   }
 
-  testos(): number {
+  randomPic(): number {
     return Math.floor(Math.random() * 4) + 1;
   }
 }
